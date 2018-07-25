@@ -1,0 +1,11 @@
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\bin\Debug\Screenshoter.exe.config
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\bin\Debug\Screenshoter.exe
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\bin\Debug\Screenshoter.pdb
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\obj\Debug\Screenshoter.csprojAssemblyReference.cache
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\obj\Debug\Screenshoter.Form1.resources
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\obj\Debug\Screenshoter.Properties.Resources.resources
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\obj\Debug\Screenshoter.csproj.GenerateResource.cache
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\obj\Debug\Screenshoter.csproj.CoreCompileInputs.cache
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\obj\Debug\Screenshoter.exe
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\obj\Debug\Screenshoter.pdb
+C:\Users\Sergey\Desktop\Screenshoter\Screenshoter\obj\Debug\Screenshoter.Form2.resources
