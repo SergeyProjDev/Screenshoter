@@ -58,21 +58,40 @@ namespace Screenshoter
             Bitmap bmp = new Bitmap(rect.Width, rect.Height, PixelFormat.Format32bppArgb);
             Graphics g = Graphics.FromImage(bmp);
             g.CopyFromScreen(rect.Left, rect.Top, 0, 0, bmp.Size, CopyPixelOperation.SourceCopy);
-            bmp.Save("picture.jpg");
+
+            string adress = SavePicture();
+            
+            bmp.Save(adress);
+           // OpenPicture(adress);
 
 
-            OpenPicture();
             Application.Exit();
         }
 
 
-        private void OpenPicture()
+        private void OpenPicture(string adress)
         {
-            string commandText = "picture.jpg";
             var proc = new System.Diagnostics.Process();
-            proc.StartInfo.FileName = commandText;
+            proc.StartInfo.FileName = adress;
             proc.StartInfo.UseShellExecute = true;
             proc.Start();
+        }
+
+        private string SavePicture()
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Title = "Сохранение изображения";
+            saveFileDialog.FileName = "picture.jpg";
+            saveFileDialog.Filter = "jpg|*.jpg|png|*.png|All files|*.*";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                return saveFileDialog.FileName;
+            }
+            else
+            {
+                string dt = DateTime.Now.ToString("yyyy-MM-ddTHH'-'mm'-'ss");
+                return dt+".jpg";
+            }
         }
 
     }
